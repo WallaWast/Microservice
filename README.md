@@ -1,15 +1,14 @@
 # Microservices Project
 
-A simple microservices project to control a catalog
+A simple microservice
 
 ## Technologies
 
-.Net 5, API, Swagger, MongoDb
-
+.Net 5, API, Swagger, MongoDb, RabbitMq
 
 ## Running the application:
 
--   Download the database with the Docker command:
--   > docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db mongo
+-   Initialize the Database on the PLAY.INFRA project running the command:
+-   > docker-compose up -d
 -   Go to the project folder "Play.Catalog.Service" and type `dotnet run`
 -   Open the browse and go to the link: https://localhost:5001/
