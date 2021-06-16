@@ -9,11 +9,13 @@ using Play.Catalog.Service.Entities;
 using Play.Catalog.Service.Extensions;
 using Play.Common;
 using Play.Catalog.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Play.Catalog.Service.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("items")]
+    [Authorize]
     public class ItemsController : ControllerBase
     {
         private readonly IRepository<Item> _itemsRepository;

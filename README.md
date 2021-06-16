@@ -4,7 +4,10 @@ A simple microservice
 
 ## Technologies
 
-.Net 5, API, Swagger, MongoDb, RabbitMq
+.Net 5, API, Swagger, MongoDb, RabbitMq, Oauth2, Identity
+
+## PUT the Admin Password on the secret storage
+dotnet user-secrets set "IdentitySettings:AdminUserPassword" "PASSWORD_HERE"
 
 ## Running the application:
 
